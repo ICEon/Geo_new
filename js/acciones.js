@@ -19,6 +19,10 @@ $('#watch').on('click', function (){
 	
 }
 
+$('#stopw').on('click', function (){
+	 navigator.geolocation.clearWatch(watchID);
+	
+});
 
 	function getPosition() {
 
@@ -58,14 +62,14 @@ function watchPosition() {
 
    function onSuccess(position) {
 
-      alert('Latitude: '          + position.coords.latitude          + '\n' +
-         'Longitude: '         + position.coords.longitude         + '\n' +
-         'Altitude: '          + position.coords.altitude          + '\n' +
-         'Accuracy: '          + position.coords.accuracy          + '\n' +
-         'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
-         'Heading: '           + position.coords.heading           + '\n' +
-         'Speed: '             + position.coords.speed             + '\n' +
-         'Timestamp: '         + position.timestamp                + '\n');
+$('#latitud').html(position.coords.latitude);
+$('#longitud').html(position.coords.longitude);
+$('#altitud').html(position.coords.altitude);
+$('#accuracy').htlm(position.coords.accuracy);
+$('#aaccuracy').html(position.coords.altitudeAccuracy);
+$('#headingg').html(position.coords.heading);
+$('#speed').html(position.coords.speed);
+$('#timestamp').html(position.timestamp);
    };
 
    function onError(error) {
