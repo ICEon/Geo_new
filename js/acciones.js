@@ -87,7 +87,7 @@ $('#timestamp').html(position.timestamp);
     navigator.geolocation.getCurrentPosition
     (onMapSuccess, onMapError, { enableHighAccuracy: true });
 	
-	var onMapSuccess = function (position) {
+	function  onMapSuccess (position) {
  
     Latitude = position.coords.latitude;
     Longitude = position.coords.longitude;
