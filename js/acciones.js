@@ -10,7 +10,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
 
 $('#gmap').on('click', function (){
-
+alert ("boton mapa");
 getMapLocation();
 
 });
@@ -82,6 +82,12 @@ $('#timestamp').html(position.timestamp);
       alert('code: '    + error.code    + '\n' +'message: ' + error.message + '\n');
    }
 
+
+
+
+}
+
+
 	function getMapLocation() {
  alert ("dentro funcion");
   navigator.geolocation.getCurrentPosition
@@ -151,7 +157,4 @@ function watchMapPosition() {
     return navigator.geolocation.watchPosition
     (onMapWatchSuccess, onMapError, { enableHighAccuracy: true });
 }
-}
-
-
 }
