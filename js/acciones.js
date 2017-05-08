@@ -106,14 +106,15 @@ $('#timestamp').html(position.timestamp);
 // Get map by using coordinates 
  
 function getMap(latitude, longitude) {
-
+var map;
     var mapOptions = {
         center: new google.maps.LatLng(0, 0),
         zoom: 1,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
- 
-   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+function initMap() {
+   map = new google.maps.Map(document.getElementById("map"), mapOptions);
  
  
     var latLong = new google.maps.LatLng(latitude, longitude);
@@ -126,7 +127,7 @@ function getMap(latitude, longitude) {
     map.setZoom(15);
     map.setCenter(marker.getPosition());
 }
- 
+}
 // Success callback for watching your changing position 
  
 var onMapWatchSuccess = function (position) {
