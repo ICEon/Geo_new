@@ -2,17 +2,17 @@
 
  <widget xmlns   = "http://www.w3.org/ns/widgets"  
      xmlns:gap = "http://phonegap.com/ns/1.0"  
-     id    = "com.cbtis16.mixteco"  
+     id    = "com.cbtis16.geonew"  
      version  = "1.0.0">  
 	 
-   <name>Lo'o Tu'un</name>  
+   <name>Geo New</name>  
    
    <description>  
-     Asistente de Mixteco a Español
+Ejemplo geolocalizacion
    </description>  
    
    <author href="https://build.phonegap.com" email="micorreo@gmail.com">  
-       Jesus Angel - Donasiano
+None
    </author>  
    <allow-intent href="https://*/*"/>
    <acces origin="https://*/*"/>
