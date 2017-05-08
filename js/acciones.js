@@ -108,14 +108,13 @@ $('#timestamp').html(position.timestamp);
 function getMap(latitude, longitude) {
 alert ("get map");
     var mapOptions = {
-        center: new google.maps.LatLng(0, 0),
+        center: {lat: 0, lng: 0},
         zoom: 1,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
    map = new google.maps.Map(document.getElementById("map"), mapOptions);
- 
- 
+  
     var latLong = new google.maps.LatLng(latitude, longitude);
  
     var marker = new google.maps.Marker({
