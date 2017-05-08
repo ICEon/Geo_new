@@ -113,8 +113,7 @@ function getMap(latitude, longitude) {
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
  
-    map = new google.maps.Map
-    (document.getElementById("map"), mapOptions);
+   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
  
  
     var latLong = new google.maps.LatLng(latitude, longitude);
