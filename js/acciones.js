@@ -10,7 +10,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
 
 $('#gmap').on('click', function (){
-alert ("boton mapa");
+
 getMapLocation();
 
 });
@@ -89,7 +89,7 @@ $('#timestamp').html(position.timestamp);
 
 
 	function getMapLocation() {
- alert ("dentro funcion");
+
  
   navigator.geolocation.getCurrentPosition
     (onMapSuccess, onMapError, { enableHighAccuracy: true });
@@ -106,7 +106,7 @@ $('#timestamp').html(position.timestamp);
 // Get map by using coordinates 
  
 function getMap(latitude, longitude) {
- alert ("en el map");
+
     var mapOptions = {
         center: new google.maps.LatLng(0, 0),
         zoom: 1,
