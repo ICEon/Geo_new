@@ -83,12 +83,12 @@ $('#timestamp').html(position.timestamp);
    }
 
 	function getMapLocation() {
- 
+ alert ("dentro funcion");
   navigator.geolocation.getCurrentPosition
     (onMapSuccess, onMapError, { enableHighAccuracy: true });
 	
 	var onMapSuccess = function (position) {
- 
+ alert ("latitud" + position.coords.latitude);
     Latitude = position.coords.latitude;
     Longitude = position.coords.longitude;
  
@@ -99,7 +99,7 @@ $('#timestamp').html(position.timestamp);
 // Get map by using coordinates 
  
 function getMap(latitude, longitude) {
- 
+ alert ("en el map");
     var mapOptions = {
         center: new google.maps.LatLng(0, 0),
         zoom: 1,
